@@ -1,0 +1,5 @@
+netdata (1.7.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Tom Powell <tom@powell.io>  Mon, 21 Aug 2017 19:52:50 -0700

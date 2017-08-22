@@ -1,0 +1,3 @@
+shlibs:Depends=libc6 (>= 2.17), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4)
+misc:Depends=
+misc:Pre-Depends=

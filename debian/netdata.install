@@ -1,0 +1,4 @@
+system/netdata.service etc/systemd/system
+system/netdata.logrotate etc/logrotate.d
+system/netdata.conf etc/netdata/
+

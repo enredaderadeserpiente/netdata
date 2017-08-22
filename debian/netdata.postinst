@@ -1,0 +1,19 @@
+#!/bin/sh
+set -e
+
+USER="netdata"
+
+if [ "$1" = "configure" ]; then
+  if [ -z "`id -u ${USER} 2> /dev/null`" ]; then
+    adduser --system  --home /var/lib/netdata --gecos "${USER}" \
+            --no-create-home --disabled-password \
+            --group --quiet ${USER} || true
+  fi
+  chown netdata:netdata /var/log/netdata
+  chown netdata:netdata /var/lib/netdata
+  chown netdata:netdata /var/lib/netdata/registry
+  chown netdata:netdata /var/cache/netdata
+  chown -R root:netdata /usr/share/netdata/web/
+fi
+
+

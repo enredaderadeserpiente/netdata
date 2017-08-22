@@ -1,0 +1,15 @@
+Source: netdata
+Section: unknown
+Priority: optional
+Maintainer: INSERT MAINTAINER HERE
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.6
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: git://anonscm.debian.org/collab-maint/netdata.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/netdata.git
+
+Package: netdata
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
